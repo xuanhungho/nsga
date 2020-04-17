@@ -1,0 +1,1 @@
+2020-04-17 16:11:56,079 no gpu device available

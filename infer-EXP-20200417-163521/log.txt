@@ -1,0 +1,3 @@
+2020-04-17 16:35:21,688 args = Namespace(SE=True, arch='NSGANet', auxiliary=True, auxiliary_weight=0.4, batch_size=128, cutout=False, cutout_length=16, data='../data', droprate=0, filter_increment=4, init_channels=26, layers=20, model_path='weights.pt', net_type='micro', report_freq=50, save='infer-EXP-20200417-163521', seed=0)
+2020-04-17 16:35:22,277 ==> Building micro search space encoded architectures
+2020-04-17 16:35:22,435 param size = 1.974364MB

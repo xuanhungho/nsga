@@ -1,0 +1,89 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontsize=12 height=0.2 ranksep=0.1 shape=box style=filled]
+	rankdir=UD
+	label="NSGANet
+
+"
+	labelloc=t
+	input [label=Input]
+	gene_0_node_0 [label=" " fillcolor=white shape=doublecircle]
+	subgraph cluster_1 {
+		fillcolor=gray fontcolor=black label="" style=filled
+		gene_0_node_1 [label=" " fillcolor=lightblue shape=circle]
+		gene_0_node_2 [label=" " fillcolor=lightblue shape=circle]
+		gene_0_node_3 [label=" " fillcolor=lightblue shape=circle]
+		gene_0_node_4 [label=" " fillcolor=lightblue shape=circle]
+		gene_0_node_5 [label=" " fillcolor=lightblue shape=circle]
+		gene_0_node_6 [label=" " fillcolor=lightblue shape=circle]
+	}
+	gene_0_node_7 [label=" " fillcolor=green4 shape=circle]
+	gene_0_pool [label=Pooling fillcolor=orange]
+	gene_0_node_0 -> gene_0_node_1
+	gene_0_node_1 -> gene_0_node_2
+	gene_0_node_0 -> gene_0_node_3
+	gene_0_node_2 -> gene_0_node_4
+	gene_0_node_2 -> gene_0_node_5
+	gene_0_node_3 -> gene_0_node_5
+	gene_0_node_4 -> gene_0_node_5
+	gene_0_node_1 -> gene_0_node_6
+	gene_0_node_4 -> gene_0_node_6
+	gene_0_node_5 -> gene_0_node_6
+	gene_0_node_6 -> gene_0_node_7
+	gene_0_node_7 -> gene_0_pool
+	gene_1_node_0 [label=" " fillcolor=white shape=doublecircle]
+	gene_0_pool -> gene_1_node_0
+	subgraph cluster_2 {
+		fillcolor=gray fontcolor=black label="" style=filled
+		gene_1_node_1 [label=" " fillcolor=lightblue shape=circle]
+		gene_1_node_2 [label=" " fillcolor=lightblue shape=circle]
+		gene_1_node_3 [label=" " fillcolor=lightblue shape=circle]
+		gene_1_node_4 [label=" " fillcolor=lightblue shape=circle]
+		gene_1_node_5 [label=" " fillcolor=lightblue shape=circle]
+		gene_1_node_6 [label=" " fillcolor=lightblue shape=circle]
+	}
+	gene_1_node_7 [label=" " fillcolor=green4 shape=circle]
+	gene_1_pool [label=Pooling fillcolor=orange]
+	gene_1_node_0 -> gene_1_node_1
+	gene_1_node_0 -> gene_1_node_2
+	gene_1_node_0 -> gene_1_node_3
+	gene_1_node_2 -> gene_1_node_4
+	gene_1_node_2 -> gene_1_node_5
+	gene_1_node_4 -> gene_1_node_5
+	gene_1_node_1 -> gene_1_node_6
+	gene_1_node_2 -> gene_1_node_6
+	gene_1_node_3 -> gene_1_node_6
+	gene_1_node_4 -> gene_1_node_6
+	gene_1_node_5 -> gene_1_node_6
+	gene_1_node_6 -> gene_1_node_7
+	gene_1_node_7 -> gene_1_pool
+	gene_2_node_0 [label=" " fillcolor=white shape=doublecircle]
+	gene_1_pool -> gene_2_node_0
+	subgraph cluster_3 {
+		fillcolor=gray fontcolor=black label="" style=filled
+		gene_2_node_1 [label=" " fillcolor=lightblue shape=circle]
+		gene_2_node_2 [label=" " fillcolor=lightblue shape=circle]
+		gene_2_node_3 [label=" " fillcolor=lightblue shape=circle]
+		gene_2_node_4 [label=" " fillcolor=lightblue shape=circle]
+		gene_2_node_5 [label=" " fillcolor=lightblue shape=circle]
+		gene_2_node_6 [label=" " fillcolor=lightblue shape=circle]
+	}
+	gene_2_node_7 [label=" " fillcolor=green4 shape=circle]
+	gene_2_pool [label="Avg. Pooling" fillcolor=orange]
+	gene_2_node_0 -> gene_2_node_1
+	gene_2_node_0 -> gene_2_node_2
+	gene_2_node_2 -> gene_2_node_3
+	gene_2_node_1 -> gene_2_node_4
+	gene_2_node_3 -> gene_2_node_4
+	gene_2_node_1 -> gene_2_node_5
+	gene_2_node_3 -> gene_2_node_5
+	gene_2_node_4 -> gene_2_node_5
+	gene_2_node_1 -> gene_2_node_6
+	gene_2_node_4 -> gene_2_node_6
+	gene_2_node_5 -> gene_2_node_6
+	gene_2_node_6 -> gene_2_node_7
+	gene_2_node_7 -> gene_2_pool
+	input -> gene_0_node_0
+	linear [label=Linear fillcolor=gray]
+	gene_2_pool -> linear
+}
