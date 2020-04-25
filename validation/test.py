@@ -17,7 +17,7 @@ import logging
 import argparse
 import numpy as np
 
-from utils import *
+from misc import utils
 
 # model imports
 from models import macro_genotypes
