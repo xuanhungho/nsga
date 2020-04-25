@@ -1,5 +1,0 @@
-2020-04-17 17:05:42,544 args = Namespace(epochs=25, init_channels=32, layers=11, n_blocks=5, n_cells=2, n_gens=30, n_nodes=4, n_offspring=40, n_ops=9, pop_size=40, save='search-GA-BiObj-macro-20200417-170542', search_space='macro', seed=0)
-2020-04-17 17:05:42,546 Network id = 1
-2020-04-17 17:05:42,563 Architecture = [[[1], [0, 1], [1, 1, 0], [1]], [[0], [0, 0], [0, 0, 0], [0]], [[1], [1, 1], [0, 0, 1], [1]]]
-2020-04-17 17:05:42,567 param size = 0.210346MB
-2020-04-17 17:05:43,666 epoch 0 lr 2.480326e-02

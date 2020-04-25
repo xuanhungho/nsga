@@ -1,2 +1,0 @@
-2020-04-17 17:00:51,822 args = Namespace(SE=False, arch='NSGANet', auxiliary=False, auxiliary_weight=0.4, batch_size=128, cutout=False, cutout_length=16, data='../data', droprate=0, filter_increment=4, init_channels=32, layers=20, model_path='weights.pt', net_type='macro', report_freq=50, save='infer-EXP-20200417-170051', seed=0)
-2020-04-17 17:00:52,813 param size = 3.370250MB

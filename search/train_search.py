@@ -1,6 +1,6 @@
 import sys
 # update your projecty root path before running
-sys.path.insert(0, '/home/xuanhung/Downloads/nsga')
+sys.path.insert(0, '/path/to/nsga-net')
 
 import os
 import numpy as np
@@ -25,7 +25,7 @@ from search import macro_encoding
 from misc.flops_counter import add_flops_counting_methods
 
 
-device = 'cpu'
+device = 'cuda'
 
 
 def main(genome, epochs, search_space='micro',
@@ -75,7 +75,7 @@ def main(genome, epochs, search_space='micro',
     # logging.info("Genome = %s", genome)
     logging.info("Architecture = %s", genotype)
 
-    # torch.cuda.set_device('cpu')
+    torch.cuda.set_device(gpu)
     cudnn.benchmark = True
     torch.manual_seed(seed)
     cudnn.enabled = True

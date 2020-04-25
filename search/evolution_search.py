@@ -1,6 +1,6 @@
 import sys
 # update your projecty root path before running
-sys.path.insert(0, '/home/xuanhung/Downloads/nsga')
+sys.path.insert(0, '/path/to/nsga-net')
 
 import os
 import time
