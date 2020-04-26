@@ -42,6 +42,21 @@ NASNet = Genotype(
     reduce_concat=[4, 5, 6],
 )
 
+HungHXNet = Genotype(
+    normal=[
+        ('sep_conv_3x3', 0),
+        ('conv_3x3', 1),
+        ('max_pool_3x3', 0)
+    ],
+    normal_concat=[1, 2, 3],
+    reduce=[
+        ('sep_conv_3x3', 1),
+        ('conv_3x3', 0),
+        ('max_pool_3x3', 0)
+    ],
+    reduce_concat=[1, 2, 3],
+)
+
 AmoebaNet = Genotype(
     normal=[
         ('avg_pool_3x3', 0),
