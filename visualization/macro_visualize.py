@@ -222,7 +222,7 @@ def demo():
 if __name__ == "__main__":
     genotype_name = sys.argv[1]
     try:
-        genotype = eval('genotypes.{}'.format(genotype_name))
+        genotype = eval('genotypes.NSGANet')
     except AttributeError:
         print("{} is not specified in genotypes.py".format(genotype_name))
         sys.exit(1)
