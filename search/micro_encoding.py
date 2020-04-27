@@ -11,22 +11,22 @@ Genotype_norm = namedtuple('Genotype', 'normal normal_concat')
 Genotype_redu = namedtuple('Genotype', 'reduce reduce_concat')
 
 # what you want to search should be defined here and in micro_operations
-# PRIMITIVES = [
-#     'max_pool_3x3',
-#     'avg_pool_3x3',
-#     'skip_connect',
-#     'sep_conv_3x3',
-#     'sep_conv_5x5',
-#     'dil_conv_3x3',
-#     'dil_conv_5x5',
-#     'sep_conv_7x7',
-#     'conv_7x1_1x7',
-# ]
-
 PRIMITIVES = [
-    'conv_3x3',
-    'max_pool_2x2',
+    'max_pool_3x3',
+    'avg_pool_3x3',
+    'skip_connect',
+    'sep_conv_3x3',
+    'sep_conv_5x5',
+    'dil_conv_3x3',
+    'dil_conv_5x5',
+    'sep_conv_7x7',
+    'conv_7x1_1x7',
 ]
+
+# PRIMITIVES = [
+#     'conv_3x3',
+#     'max_pool_2x2',
+# ]
 
 
 def convert_cell(cell_bit_string):
