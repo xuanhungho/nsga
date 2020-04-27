@@ -30,7 +30,7 @@ device = 'cuda'
 
 def main(genome, epochs, search_space='micro',
          save='Design_1', expr_root='search', seed=0, gpu=0, init_channels=24,
-         layers=11, auxiliary=False, cutout=False, drop_path_prob=0.0):
+         layers=4, auxiliary=False, cutout=False, drop_path_prob=0.0):
 
     # ---- train logger ----------------- #
     save_pth = os.path.join(expr_root, '{}'.format(save))
