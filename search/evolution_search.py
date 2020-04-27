@@ -55,7 +55,7 @@ pop_hist = []  # keep track of every evaluated architecture
 class NAS(Problem):
     # first define the NAS problem (inherit from pymop)
     def __init__(self, search_space='micro', n_var=20, n_obj=1, n_constr=0, lb=None, ub=None,
-                 init_channels=24, layers=8, epochs=25, save_dir=None):
+                 init_channels=24, layers=4, epochs=25, save_dir=None):
         super().__init__(n_var=n_var, n_obj=n_obj, n_constr=n_constr, type_var=np.int)
         self.xl = lb
         self.xu = ub
