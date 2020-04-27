@@ -46,13 +46,13 @@ HungHXNet = Genotype(
     normal=[
         ('sep_conv_3x3', 0),
         ('conv_3x3', 1),
-        ('max_pool_3x3', 0)
+        ('max_pool_3x3', 2)
     ],
     normal_concat=[1, 2, 3],
     reduce=[
-        ('sep_conv_3x3', 1),
-        ('conv_3x3', 0),
-        ('max_pool_3x3', 0)
+        ('sep_conv_3x3', 0),
+        ('conv_3x3', 1),
+        ('max_pool_3x3', 2)
     ],
     reduce_concat=[1, 2, 3],
 )

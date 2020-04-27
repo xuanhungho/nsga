@@ -2,6 +2,19 @@ from models.micro_operations import *
 from misc.utils import drop_path
 
 
+# DEFAULT_PADDINGS = {
+#     'none': 1,
+#     'skip_connect': 1,
+#     'avg_pool_3x3': 1,
+#     'max_pool_3x3': 1,
+#     'sep_conv_3x3': 1,
+#     'sep_conv_5x5': 2,
+#     'sep_conv_7x7': 3,
+#     'dil_conv_3x3': 2,
+#     'dil_conv_5x5': 4,
+#     'conv_7x1_1x7': 3,
+# }
+
 DEFAULT_PADDINGS = {
     'none': 1,
     'skip_connect': 1,
@@ -13,6 +26,7 @@ DEFAULT_PADDINGS = {
     'dil_conv_3x3': 2,
     'dil_conv_5x5': 4,
     'conv_7x1_1x7': 3,
+    'conv_3x3': 3,
 }
 
 

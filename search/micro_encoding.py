@@ -24,8 +24,8 @@ Genotype_redu = namedtuple('Genotype', 'reduce reduce_concat')
 # ]
 
 PRIMITIVES = [
-    'max_pool_3x3',
     'conv_3x3',
+    'max_pool_2x2',
 ]
 
 

@@ -5,6 +5,8 @@ OPS = {
     'none': lambda C, stride, affine: Zero(stride),
     'avg_pool_3x3': lambda C, stride, affine: nn.AvgPool2d(3, stride=stride, padding=1, count_include_pad=False),
     'max_pool_3x3': lambda C, stride, affine: nn.MaxPool2d(3, stride=stride, padding=1),
+    'max_pool_2x2': lambda C, stride, affine: nn.MaxPool2d(2, stride=stride, padding=1),
+    'conv_3x3':  lambda C, stride, affine: nn.Conv2d(3, 3, kernel_size=3, stride=stride, padding=1, bias=False),
     'skip_connect': lambda C, stride, affine: Identity() if stride == 1 else FactorizedReduce(C, C, affine=affine),
     'sep_conv_3x3': lambda C, stride, affine: SepConv(C, C, 3, stride, 1, affine=affine),
     'sep_conv_5x5': lambda C, stride, affine: SepConv(C, C, 5, stride, 2, affine=affine),
