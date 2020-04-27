@@ -68,7 +68,7 @@ def main(genome, epochs, search_space='micro',
         channels = [(3, init_channels),
                     (init_channels, 2*init_channels),
                     (2*init_channels, 4*init_channels)]
-        model = EvoNetwork(genotype, channels, CIFAR_CLASSES, (32, 32), decoder='residual')
+        model = EvoNetwork(genotype, channels, CIFAR_CLASSES, (16, 16), decoder='residual')
     else:
         raise NameError('Unknown search space type')
 
